@@ -1,0 +1,102 @@
+@media screen and (max-width: 480px) {
+  .modal {
+    padding-top: 10%;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  .modal-header {
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+    /* padding-left: 40px; */
+    text-align: center;
+    line-height: 2;
+  }
+
+  /* Modal Body */
+  .modal-body {
+    padding: 2px 16px;
+    /* height: 500px; */
+    background: url(../images/login-img.png) bottom;
+  }
+
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative; /* relative to orverride all other tag */
+    background-color: #fefefe;
+    margin: 100px auto auto auto;
+    padding-top: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 1s;
+  }
+  .sign-up-input {
+    display: block;
+    height: 40px;
+    margin: auto;
+    width: 80%;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(248, 248, 248);
+    outline: none;
+    font-size: 17px;
+  }
+  .log-in-input {
+    display: block;
+    height: 40px;
+    margin: auto;
+    width: 80%;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(248, 248, 248);
+    outline: none;
+    font-size: 17px;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .submit-btn {
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    font-size: 18px;
+    width: 60%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #ffc83d;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .link-log-in,
+  .link-sign-up {
+    font-size: 14px;
+    margin-top: 25px;
+    text-align: center;
+  }
+}

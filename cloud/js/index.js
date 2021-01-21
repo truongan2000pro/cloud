@@ -105,7 +105,7 @@ async function init() {
     let userSection = document.getElementsByClassName("user-section")[0];
     let signOutBtn = document.getElementById("sign-out-btn");
     console.log(signOutBtn);
-    userSection.innerHTML = `<h3> Xin chào ${user.email} </h3>`;
+    userSection.innerHTML = `<h3> Xin chào ${user.displayName} </h3>`;
     signOutBtn.innerText = "Đăng Xuất";
     signOutBtn.onclick = function () {
       firebase

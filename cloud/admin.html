@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/admin.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="row-container">
+        <div class="row">
+          <div class="table-wrapper">
+            <table class="table table-striped">
+              <thead>
+                <tr class="header-tag">
+                  <th scope="col">Id</th>
+                  <th class="name" scope="col">Tên sản phẩm</th>
+                  <th scope="col">Thời gian đăng</th>
+                  <th class="des" scope="col">Mô tả</th>
+                  <th scope="col">Ảnh</th>
+                  <th scope="edit">Chỉnh Sửa</th>
+                </tr>
+              </thead>
+              <tbody class="body-tag"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="w3-container">
+      <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width: 600px">
+          <div class="w3-center">
+            <br />
+            <span
+              onclick="document.getElementById('id02').style.display='none'"
+              class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+              title="Close Modal"
+              >&times;</span
+            >
+            <img
+              src="./imgs/manufacturing.png"
+              alt="Avatar"
+              style="width: 30%"
+              class="w3-circle w3-margin-top"
+            />
+          </div>
+
+          <form id="form-update" class="w3-container" action="">
+            <div class="w3-section">
+              <label for=""><b>Ảnh</b></label>
+              <input class="w3-input w3-border w3-margin-bottom" type="file" name="img" required />
+              <label><b>Tiêu đề</b></label>
+              <input
+                class="w3-input w3-border w3-margin-bottom"
+                type="text"
+                placeholder="Tiêu đề bài viết"
+                name="title"
+                required
+              />
+              <label><b>Nội dung</b></label>
+              <input
+                class="w3-input w3-border"
+                placeholder="Nội dung bài viết"
+                name="content"
+                required
+              />
+              <button
+                id="post-btn"
+                class="w3-button w3-block w3-green w3-section w3-padding"
+                type="submit"
+              >
+                Cập nhật
+              </button>
+            </div>
+          </form>
+
+          <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+            <button
+              onclick="document.getElementById('id02').style.display='none'"
+              type="button"
+              class="w3-button w3-red"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+	https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-storage.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBasxGMPrJO6KwrKJJU3UWh6Jm0j2sXKtc",
+      authDomain: "cloud-computing-eb891.firebaseapp.com",
+      projectId: "cloud-computing-eb891",
+      storageBucket: "cloud-computing-eb891.appspot.com",
+      messagingSenderId: "819061909570",
+      appId: "1:819061909570:web:67c4d5476abd6eed82e5db",
+      measurementId: "G-GT49PV47JD",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</html>

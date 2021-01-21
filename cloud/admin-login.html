@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/admin-login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="log-in-container">
+      <form id="form-log-in" class="log-in-wrapper">
+        <h2>LOG IN</h2>
+        <input
+          placeholder="Email"
+          name="email"
+          class="log-in-input log-in-mail email"
+          type="email"
+        />
+        <br />
+        <input
+          placeholder="Password"
+          name="password"
+          class="log-in-input log-in-pass password"
+          type="password"
+        />
+        <br />
+        <button type="submit" class="admin-log-in-btn">Login</button>
+      </form>
+    </div>
+  </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBasxGMPrJO6KwrKJJU3UWh6Jm0j2sXKtc",
+      authDomain: "cloud-computing-eb891.firebaseapp.com",
+      projectId: "cloud-computing-eb891",
+      storageBucket: "cloud-computing-eb891.appspot.com",
+      messagingSenderId: "819061909570",
+      appId: "1:819061909570:web:67c4d5476abd6eed82e5db",
+      measurementId: "G-GT49PV47JD",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script src="./js/admin-login.js"></script>
+</html>

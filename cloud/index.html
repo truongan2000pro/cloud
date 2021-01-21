@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-    crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
     />
-    
+
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/f38de2a0a5.js" crossorigin="anonymous"></script>
@@ -23,129 +23,234 @@
   </head>
 
   <body>
-
-        <!-- Auth -->
-        <div class="w3-container">
-          <div id="id01" class="w3-modal">
-      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
-  
-        <div class="w3-center"><br>
-          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-          <img src="./imgs/manufacturing.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
-        </div>
-  
-        <form id="form-log-in" class="w3-container" action="">
-          <div class="w3-section user-section">
-            <!-- <label ><b>Tên tài khoản</b></label>
-            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Tên tài khoản" name="name" required> -->
-            <label><b>Email</b></label>
-            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Email" name="usrname" required>
-            <label><b>Mật khẩu</b></label>
-            <input class="w3-input w3-border" type="password" placeholder="Mật khẩu" name="psw" required>
-            <button id="log-in" class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Đăng nhập</button>
-            <button id="register" style="color:red !important;" class="w3-button w3-block w3-green w3-section w3-padding" >Đăng ký</button>
+    <!-- Auth -->
+    <div class="w3-container">
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width: 600px">
+          <div class="w3-center">
+            <br />
+            <span
+              onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+              title="Close Modal"
+              >&times;</span
+            >
+            <img
+              src="./imgs/manufacturing.png"
+              alt="Avatar"
+              style="width: 30%"
+              class="w3-circle w3-margin-top"
+            />
           </div>
-        </form>
-  
-        <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" id="sign-out-btn" class="w3-button w3-red">Cancel</button>
+
+          <form id="form-log-in" class="w3-container" action="">
+            <div class="w3-section user-section">
+              <label><b>Email</b></label>
+              <input
+                class="w3-input w3-border w3-margin-bottom"
+                type="text"
+                placeholder="Email"
+                name="usrname"
+                required
+              />
+              <label><b>Mật khẩu</b></label>
+              <input
+                class="w3-input w3-border"
+                type="password"
+                placeholder="Mật khẩu"
+                name="psw"
+                required
+              />
+              <button
+                id="log-in"
+                class="w3-button w3-block w3-green w3-section w3-padding"
+                type="submit"
+              >
+                Đăng nhập
+              </button>
+              <button
+                id="register"
+                style="color: red !important"
+                class="w3-button w3-block w3-green w3-section w3-padding"
+              >
+                Đăng ký
+              </button>
+            </div>
+          </form>
+
+          <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+            <button
+              onclick="document.getElementById('id01').style.display='none'"
+              type="button"
+              id="sign-out-btn"
+              class="w3-button w3-red"
+            >
+              Cancel
+            </button>
+          </div>
         </div>
-  
       </div>
     </div>
-  </div>
-  <!-- end -->
+    <!-- end -->
 
-<!-- Register -->
+    <!-- Register -->
 
-<div class="w3-container">
-  <div id="id03" class="w3-modal">
-<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+    <div class="w3-container">
+      <div id="id03" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width: 600px">
+          <div class="w3-center">
+            <br />
+            <span
+              onclick="document.getElementById('id03').style.display='none'"
+              class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+              title="Close Modal"
+              >&times;</span
+            >
+            <img
+              src="./imgs/manufacturing.png"
+              alt="Avatar"
+              style="width: 30%"
+              class="w3-circle w3-margin-top"
+            />
+          </div>
 
-<div class="w3-center"><br>
-  <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-  <img src="./imgs/manufacturing.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
-</div>
+          <form id="form-register" class="w3-container" action="">
+            <div class="w3-section user-section">
+              <label><b>Tên tài khoản</b></label>
+              <input
+                class="w3-input w3-border w3-margin-bottom"
+                type="text"
+                placeholder="Tên tài khoản"
+                name="name"
+                required
+              />
+              <label><b>Email</b></label>
+              <input
+                class="w3-input w3-border w3-margin-bottom"
+                type="text"
+                placeholder="Email"
+                name="usrname"
+                required
+              />
+              <label><b>Mật khẩu</b></label>
+              <input
+                class="w3-input w3-border"
+                type="password"
+                placeholder="Mật khẩu"
+                name="psw"
+                required
+              />
+              <button
+                id="sign-up"
+                class="w3-button w3-block w3-green w3-section w3-padding"
+                type="submit"
+              >
+                Đăng ký
+              </button>
+              <button id="sign-in" class="w3-button w3-block w3-green w3-section w3-padding">
+                Đăng nhập
+              </button>
+            </div>
+          </form>
 
-<form id="form-register" class="w3-container" action="">
-  <div class="w3-section user-section">
-    <label ><b>Tên tài khoản</b></label>
-    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Tên tài khoản" name="name" required>
-    <label><b>Email</b></label>
-    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Email" name="usrname" required>
-    <label><b>Mật khẩu</b></label>
-    <input class="w3-input w3-border" type="password" placeholder="Mật khẩu" name="psw" required>
-    <button id="sign-up" class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Đăng ký</button>
-    <button id="sign-in" class="w3-button w3-block w3-green w3-section w3-padding" >Đăng nhập</button>
-  </div>
-</form>
+          <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+            <button
+              onclick="document.getElementById('id03').style.display='none'"
+              type="button"
+              id="sign-out-btn"
+              class="w3-button w3-red"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
-  <button onclick="document.getElementById('id03').style.display='none'" type="button" id="sign-out-btn" class="w3-button w3-red">Cancel</button>
-</div>
+    <!-- end -->
 
-</div>
-</div>
-</div>
+    <!-- Post -->
 
-<!-- end -->
+    <div class="w3-container">
+      <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width: 600px">
+          <div class="w3-center">
+            <br />
+            <span
+              onclick="document.getElementById('id02').style.display='none'"
+              class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+              title="Close Modal"
+              >&times;</span
+            >
+            <img
+              src="./imgs/manufacturing.png"
+              alt="Avatar"
+              style="width: 30%"
+              class="w3-circle w3-margin-top"
+            />
+          </div>
 
-<!-- Post -->
+          <h3 id="error" style="color: red; text-align: center; display: none">
+            Bạn cần đăng nhập để dùng chức năng này!
+          </h3>
+          <form id="form-post" class="w3-container" action="">
+            <div class="w3-section">
+              <label for=""><b>Ảnh</b></label>
+              <input class="w3-input w3-border w3-margin-bottom" type="file" name="img" required />
+              <label><b>Tiêu đề</b></label>
+              <input
+                class="w3-input w3-border w3-margin-bottom"
+                type="text"
+                placeholder="Tiêu đề bài viết"
+                name="title"
+                required
+              />
+              <label><b>Nội dung</b></label>
+              <input
+                class="w3-input w3-border"
+                placeholder="Nội dung bài viết"
+                name="content"
+                required
+              />
+              <button
+                id="post-btn"
+                class="w3-button w3-block w3-green w3-section w3-padding"
+                type="submit"
+              >
+                Đăng bài
+              </button>
+            </div>
+          </form>
 
-<div class="w3-container">
-<div id="id02" class="w3-modal">
-<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+          <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+            <button
+              onclick="document.getElementById('id02').style.display='none'"
+              type="button"
+              class="w3-button w3-red"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="w3-center"><br>
-<span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-<img src="./imgs/manufacturing.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
-</div>
-
-<h3 id="error" style="color:red;   text-align:center; display: none;"> Bạn cần đăng nhập để dùng chức năng này!</h3>
-<form id="form-post" class="w3-container" action="">
-
-<div class="w3-section ">
-
-    <label for=""><b>Ảnh</b></label>
-    <input class="w3-input w3-border w3-margin-bottom" type="file" name="img" required>
-  <label><b>Tiêu đề</b></label>
-  <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Tiêu đề bài viết" name="title" required>
-  <label><b>Nội dung</b></label>
-  <input class="w3-input w3-border" placeholder="Nội dung bài viết" name="content" required>
-  <button id="post-btn" class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Đăng bài</button>
-</div>
-</form>
-
-<div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
-<button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
-</div>
-
-</div>
-</div>
-</div>
-
-<!--end -->
-
-
+    <!--end -->
 
     <nav>
       <div class="nav-container">
-        <div class="aside-left">Denali</div>
+        <a style="display: block" href="./index.html" class="aside-left">Denali</a>
         <div class="aside-right">
           <!-- <a>Home</a>
           <a>About</a>
           <a>Contact</a> -->
           <div id="btnPostWeb">Đăng bài</div>
-          <div id="myBtnWeb">Đăng nhập</div>
-
+          <div id="myBtnWeb">Tài Khoản</div>
         </div>
       </div>
     </nav>
     <!-- content -->
-    <div class="content-container">
-     
-      
-    </div>
+    <div class="content-container"></div>
 
     <div class="footer">
       <div class="introduce">
@@ -169,7 +274,9 @@
 
     <div class="wall"></div>
     <div class="menu">
-      <div class="menu-home"><i class="fas fa-home"></i></div>
+      <a style="display: block" href="./index.html" class="menu-home"
+        ><i class="fas fa-home"></i
+      ></a>
       <span>|</span>
       <div id="btnPost" class="menu-post"><i class="fas fa-plus-circle"></i></div>
       <span>|</span>
@@ -185,7 +292,6 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-storage.js"></script>
-  
 
   <script>
     // Your web app's Firebase configuration

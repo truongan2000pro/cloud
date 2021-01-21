@@ -1,0 +1,52 @@
+.edit-update {
+  list-style: none;
+  text-align: center;
+  color: red;
+  /* padding: auto; */
+}
+.edit-delete {
+  list-style: none;
+  text-align: center;
+  color: red;
+  /* padding: auto; */
+}
+
+.edit-delete:hover ,.edit-update:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+.row {
+  width: 1200px;
+  margin: auto;
+}
+td {
+  max-width: 200px;
+  overflow-wrap: break-word;
+  max-height: 10px;
+}
+th {
+  max-width: 10px;
+}
+table {
+  padding: 1000px;
+}
+.btn {
+  text-align: center;
+}
+.page-number-wrapper {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.page-number-wrapper > * {
+  margin: 20px 1px 20px 1px;
+}
+tr{
+  max-height: 10px;
+}
+.des{
+  min-width: 400px;
+  max-height: 10px;
+
+}
